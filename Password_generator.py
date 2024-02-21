@@ -33,6 +33,6 @@ random.shuffle(list_password)
 suffled_password=""
 for i in list_password:
     suffled_password=suffled_password+i
- 
+  
 
 print("generated password is ",suffled_password)
