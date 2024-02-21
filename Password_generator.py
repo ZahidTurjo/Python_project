@@ -21,7 +21,18 @@ for i in range(1,n_symbols+1):
     password=password+sym
 print(password)    
 
-for i in range(1,n_numbers):
+for i in range(1,n_numbers+1):
     int=random.choice(numbers)
     password=password+int
-print(password)    
+   
+list_password=list(password)
+print(list_password)
+random.shuffle(list_password)
+
+# suffled_password=" ".join(list_password)
+suffled_password=""
+for i in list_password:
+    suffled_password=suffled_password+i
+ 
+
+print("generated password is ",suffled_password)
