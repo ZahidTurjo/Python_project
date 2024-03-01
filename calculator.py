@@ -18,13 +18,13 @@ operations_dict={
 new_process=True
 while new_process:
 
-    number= int(input("Enter first number:"))
+    number= float(input("Enter first number:"))
     for symbol in operations_dict:
         print(symbol)
     end_process=False    
     while not end_process:    
         op_symbol= input("enter a operation:")
-        next_number=int(input("Enter the next number:"))
+        next_number=float(input("Enter the next number:"))
 
         calculator_function=operations_dict[op_symbol]
         output=calculator_function(number,next_number)
@@ -34,7 +34,6 @@ while new_process:
         if should_continue == 'y':
             number=output
         elif should_continue == 'n':
-              
               end_process=True
               os.system("cls")
         elif should_continue == 'x':
