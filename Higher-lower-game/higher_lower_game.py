@@ -34,7 +34,7 @@ while not end_process:
          account2=random.choice(game_database.data)
 
     print(f"Compare 1:{display_account_info(account1)}")
-    print(game_artr.vs)
+    print(game_artr.vs  )
     print(f"Compare 2:{display_account_info(account2)}")
     guess=int(input('Which one have more followers 1 or 2 :'))
     followers_count1=account1['followers_count']
