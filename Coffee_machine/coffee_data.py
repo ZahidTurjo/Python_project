@@ -25,3 +25,16 @@ menu={
     },    
     
 }
+
+x=input('Ebter the number ')
+z=x.split(' ')
+print(len(z))
+for i in range(0,len(z)):
+    z[i]=int(z[i])
+print(z)    
+sum=0
+for i in z:
+    sum+=i
+    print(sum)
+
+      
